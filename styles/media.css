@@ -1,0 +1,38 @@
+@media (max-width: 700px) {
+    body::after {
+        background-image: none;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+@media (min-width: 480px) {
+    h1 {
+        font-size: 7.6rem;
+    }
+}
+
+@media (min-width: 560px) {
+    h1 {
+        font-size: 9.6rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .box {
+        row-gap: 3;
+    }
+}
+
+@media (min-width: 560px) {
+    .box {
+        row-gap: 5;
+    }
+}
+
+@media (min-width: 480px) {
+    .box_button {
+        font-size: 2rem;
+        padding: 1.4rem 6rem 1.4rem 6rem;
+    }
+}

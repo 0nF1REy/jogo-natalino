@@ -1,0 +1,19 @@
+A criação desse projeto, desenvolvido por Alan Ryan da Silva Domingues,
+teve como base os seguintes materiais de apoio e recursos utilizados,
+com o último acesso registrado em 22 de dezembro de 2024.
+
+|Alan-------------------------20--------------------------------|
+|                                                               |  
+|   https://youtu.be/M82wYJv1g00?si=CkqGVPA1bsU80UKZ            |
+|   ("Halloween Game (App) | HTML, CSS & JS 🎃" - "CODE ATD")   |  
+|---------------------------------------------------------------|  
+|   https://santatracker.google.com/                            |  
+|   ("Google Santa Tracker")                                    |  
+|---------------------------------------------------------------|  
+|   https://www.remove.bg/pt-br                                 |  
+|   ("remove.bg")                                               |  
+|---------------------------------------------------------------|  
+|   https://products.aspose.app/words/pt/splitter/image         |  
+|   ("Aspose - Splitter Image")                                 | 
+|                                                               |  
+|-----------------------------24----------------------------Ryan|   

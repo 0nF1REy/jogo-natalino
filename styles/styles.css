@@ -1,0 +1,285 @@
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+:root {
+    /* Paleta de cores natalino */
+    --color-laranja: #F5624D;
+    --color-vermelho: #CC231E;
+    --color-verde-claro: #34A65F;
+    --color-verde-escuro: #0F8A5F;
+    --color-azul: #235E6F;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../assets/img/background-snow.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    animation: filter 3s ease-in-out;
+}
+
+body::after {
+    content: "";
+    background-image: url(../assets/img/natal-1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top right;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+body,
+button {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 60rem;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: "Mountains of Christmas", cursive;
+    text-decoration: underline #CC231E;
+    font-size: 5.6rem;
+    text-shadow:
+        2px 2px 5px #235E6F,
+        -2px -2px 5px #ffffff,
+        4px 4px 10px #34A65F,
+        -4px -4px 10px #CC231E;
+    word-spacing: 20px;
+}
+
+
+button {
+    border: none;
+}
+
+@keyframes filter {
+    0% {
+        filter: blur(.8rem);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+/* Box */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.box_h1 {
+    transition: .3s ease;
+}
+
+#cor-jogue:hover,
+#cor-agora:hover {
+    opacity: 0.8;
+}
+
+#cor-jogue {
+    color: #34A65F;
+}
+
+#cor-agora {
+    color: #CC231E;
+}
+
+/* Card */
+
+.card {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 60rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card_label {
+    border: .4rem transparent #ffffff00;
+    background: url(../assets/img/background-snow.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: none;
+    width: 100%;
+    padding: .5rem;
+    position: relative;
+    height: calc(100% / 5);
+    z-index: 1;
+    box-shadow:
+        0 0 15px #235E6F,
+        0 0 15px #ffffff,
+        0 0 15px #34A65F,
+        0 0 15px #CC231E;
+}
+
+.card_label:nth-child(1) {
+    border-top: none;
+}
+
+.card_label .card_input {
+    position: relative;
+    appearance: none;
+    z-index: 1;
+}
+
+.card_label .card_i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 60rem;
+}
+
+.card_label:nth-child(1) .card_i {
+    background-image: url(../assets/img/parte-1.png);
+    animation: slider .5s steps(3) infinite;
+}
+
+.card_label:nth-child(2) .card_i {
+    background-image: url(../assets/img/parte-2.png);
+    animation: slider .7s steps(3) infinite;
+}
+
+.card_label:nth-child(3) .card_i {
+    background-image: url(../assets/img/parte-3.png);
+    animation: slider .10s steps(3) infinite;
+}
+
+.card_label:nth-child(4) .card_i {
+    background-image: url(../assets/img/parte-4.png);
+    animation: slider .14s steps(3) infinite;
+}
+
+.card_label:nth-child(5) .card_i {
+    background-image: url(../assets/img/parte-5.png);
+    animation: slider .20s steps(3) infinite;
+}
+
+
+.card_label .card_input:checked~.card_i {
+    animation-play-state: paused;
+}
+
+.box_button {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    background: #235E6F;
+    background: linear-gradient(100deg, #34A65F 0%, #CC231E 100%);
+    border-radius: 3rem;
+    padding: 1.2rem 3rem 1.2rem 3rem;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow:
+        2px 2px 5px #235E6F,
+        -2px -2px 5px #ffffff,
+        4px 4px 10px #34A65F,
+        -4px -4px 10px #CC231E;
+}
+
+.box_button:hover {
+    opacity: 0.8;
+}
+
+;
+
+.box_button:active {
+    background: linear-gradient(100deg, #00ff62 0%, #ff0800 100%);
+    scale: .9;
+}
+
+/* Animação */
+
+@keyframes slider {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 60rem;
+    }
+}
+
+/* Neves */
+
+.snowflake {
+    position: absolute;
+    top: -10vh;
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: fall linear infinite;
+    z-index: 0;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh);
+        opacity: 0.3;
+    }
+}
