@@ -1,4 +1,4 @@
-# <a href="https://0nf1rey.github.io/jogo-natalino/">Jogo Natalino</a>
+# <a href="https://0nf1rey.github.io/jogo-natalino/" target="_blank" >Jogo Natalino</a>
 
 <h3><i>Página principal do projeto</i></h3>
 
