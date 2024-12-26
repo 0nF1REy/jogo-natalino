@@ -1,4 +1,4 @@
-# Jogo Natalino
+# Jogo natalino
 <ul>
   <li><h3><i>Página principal do projeto:</i></h3></li>
 </ul>
